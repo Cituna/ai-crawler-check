@@ -73,7 +73,7 @@ async function collect() {
       return { error: String((e && e.message) || e) };
     }
   };
-  const [robots, llms, page] = await Promise.all([get('/robots.txt'), get('/llms.txt'), head()]);
+  const [robots, llms, page] = await Promise.all([get(location.origin + '/robots.txt'), get(location.origin + '/llms.txt'), head()]);
   const metas = [...document.querySelectorAll('meta[name]')]
     .filter((m) => /^(robots|googlebot|bingbot|gptbot|oai-searchbot|claudebot|perplexitybot)$/i.test(m.getAttribute('name') || ''))
     .map((m) => ({ name: m.getAttribute('name'), content: m.getAttribute('content') || '' }));
