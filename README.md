@@ -1,6 +1,6 @@
 # AI Crawler Check
 
-A free Chrome extension from [Cituna](https://cituna.com) that answers one question about the page you are on: **can the AI engines read it?**
+A free browser extension from [Cituna](https://cituna.com) that answers one question about the page you are on: **can the AI engines read it?**
 
 Click the icon and it reads the site's `robots.txt` the way the crawlers do, then shows, for this exact path:
 
@@ -28,6 +28,11 @@ The parser follows [RFC 9309](https://www.rfc-editor.org/rfc/rfc9309) and [Googl
 The extension collects nothing and sends nothing to Cituna or anyone else. When you click the icon it asks the site you are on for `/robots.txt`, `/llms.txt` and the page's own headers, reads the page's meta tags and JSON-LD, and shows the result in the popup. No analytics, no accounts, no storage. It uses only the `activeTab` and `scripting` permissions, so it can read a page only after you click the icon on it. See [PRIVACY.md](PRIVACY.md).
 
 The button at the bottom opens cituna.com in a new tab, where you can run a free scan of what ChatGPT, Perplexity, Gemini, Claude, Grok, Google AI Overviews and Google AI Mode say about the site.
+
+## Install
+
+- [Chrome Web Store](https://chromewebstore.google.com/detail/ai-crawler-check-by-citun/fidcbodloagcjgolpgkgifdlbmjgiold)
+- [Microsoft Edge Add-ons](https://microsoftedge.microsoft.com/addons/detail/ai-crawler-check-by-cituna/appjdegpafkmepiiphdokmcdedailghf)
 
 ## Install from source
 
